@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "464219351518",
+    "project_id": "quiz-ddj6d4",
+    "storage_bucket": "quiz-ddj6d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464219351518:android:12efa90d42925fe93a954f",
+        "android_client_info": {
+          "package_name": "com.saumya.aktufirm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464219351518-keoha4sk8s8pghgrr9nlmrduga1of265.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saumya.aktufirm",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "464219351518-umcdbr7e8gmoq6cguijkqrvgc73v8eub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLA2xKoWJG0n93lQl2ir-gxg9NXSfYcI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464219351518-umcdbr7e8gmoq6cguijkqrvgc73v8eub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "464219351518-l52k4ttqo49p44squn6j0dsq4mtf7o28.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.saumya.aktufirm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
