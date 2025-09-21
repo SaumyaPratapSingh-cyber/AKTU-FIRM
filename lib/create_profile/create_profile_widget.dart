@@ -167,7 +167,8 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                       if (selectedMedia != null &&
                           selectedMedia.every((m) =>
                               validateFileFormat(m.storagePath, context))) {
-                        safeSetState(() => _model.isDataUploading = true);
+                        safeSetState(
+                            () => _model.isDataUploading_uploadData1mc = true);
                         var selectedUploadedFiles = <FFUploadedFile>[];
 
                         var downloadUrls = <String>[];
@@ -198,15 +199,16 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                               .toList();
                         } finally {
                           ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                          _model.isDataUploading = false;
+                          _model.isDataUploading_uploadData1mc = false;
                         }
                         if (selectedUploadedFiles.length ==
                                 selectedMedia.length &&
                             downloadUrls.length == selectedMedia.length) {
                           safeSetState(() {
-                            _model.uploadedLocalFile =
+                            _model.uploadedLocalFile_uploadData1mc =
                                 selectedUploadedFiles.first;
-                            _model.uploadedFileUrl = downloadUrls.first;
+                            _model.uploadedFileUrl_uploadData1mc =
+                                downloadUrls.first;
                           });
                           showUploadMessage(context, 'Success!');
                         } else {
@@ -518,7 +520,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                             .update(createUsersRecordData(
                           displayName: _model.yourNameTextController.text,
                           uid: _model.yourAgeTextController.text,
-                          photoUrl: _model.uploadedFileUrl,
+                          photoUrl: _model.uploadedFileUrl_uploadData1mc,
                         ));
 
                         context.goNamed(SelectyearWidget.routeName);

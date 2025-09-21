@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 class CreateProfileModel extends FlutterFlowModel<CreateProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
+  bool isDataUploading_uploadData1mc = false;
+  FFUploadedFile uploadedLocalFile_uploadData1mc =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl = '';
+  String uploadedFileUrl_uploadData1mc = '';
 
   // State field(s) for yourName widget.
   FocusNode? yourNameFocusNode;
